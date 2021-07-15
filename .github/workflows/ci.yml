@@ -17,8 +17,10 @@ jobs:
     - run: npm ci
     - run: cd client
     - run: npm install --production
+    - run: npm run start
     - run: cd ..
     - run: cd api
+    - run: npm install --production
     - run: npm run start
     # run: npm test
   deploy-webapp:
