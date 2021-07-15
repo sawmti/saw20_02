@@ -15,12 +15,12 @@ jobs:
       with:
         node-version: 12.14.1   
     - run: cd client
-    - run: npm install --production
+    #- run: npm install --production
     - run: npm ci
     - run: cd ..
     - run: cd api
     - run: npm ci
-    - run: npm install --production 
+    #- run: npm install --production 
     # run: npm test
   deploy-webapp:
     needs: [build-test]
