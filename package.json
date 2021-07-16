@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Node.js example skeleton",
   "main": "server.js",
+  "type": "module",
   "jest": {
     "testEnvironment": "node"
   },
