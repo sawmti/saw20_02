@@ -1,4 +1,4 @@
-name: Continuous integration for SAW template
+name: Heroku Deploy Api
 
 on:
   push:
@@ -11,12 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
+    - name: Set up JDK 1.8
+    - uses: actions/setup-java@v1
       with:
-        node-version: 12.14.1     
-    - run: cd client
-    #- run: npm install --production
-    - run: npm ci
+        java-version: 1.8     
+    - run: mvn -B package --file pom.xml
   deploy-webapp:
     needs: [build-test]
     runs-on: ubuntu-latest
@@ -25,7 +24,7 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.8.9 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "saw2002webapp" #Must be unique in Heroku
+          heroku_app_name: "back-wiki-g03" #Must be unique in Heroku
           heroku_email: "jelabra@gmail.com"
           usedocker: true
           docker_build_args: |
