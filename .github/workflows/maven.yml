@@ -21,6 +21,8 @@ jobs:
       with:
         java-version: '8'
         distribution: 'adopt'
+    - name: Ingresar a la carpeta api
+      run: cd api
     - name: Build with Maven
       run: mvn -B package --file pom.xml
       
