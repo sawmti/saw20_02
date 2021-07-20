@@ -2,9 +2,10 @@
 
 # Project structure - Group SAW 20_02
 
-This repository contains a simple skeleton of a web page which contains a REST service implemented in Node and a simple Web client that invokes the service. 
+This repository contains two submodules to external github repositories. One of them contains a client and the second one an api to feed data to the client.
 
-- [client](https://github.com/sawmti/saw20_02/tree/main/client) contains the source code of the web client (html/css/javascript files)
+- [client](https://github.com/mdbesoain/saw_g02_client) Contains the source code of the web client. It was implemented with React using the [Material Dashboard React. Coded by Creative Tim"](https://www.creative-tim.com/product/material-dashboard-react)
+
 - [api](https://github.com/sawmti/saw20_02/tree/main/api) contains the source code of the REST API
 ## Running locally
 
@@ -37,8 +38,9 @@ docker-compose up
 
 ## Contributors
 
-- [Jose Emilio Labra Gayo](http://labra.weso.es)
+- [Jose Emilio Labra Gayo](https://github.com/labra)
+- [Victor Ortiz](https://github.com/vortiz86)
+- [Paolo Saxton](https://github.com/OPOSAX)
+- [Matias Diaz](https://github.com/mdbesoain)
 
-## Credits
 
-This skeleton is based on a [similar skeleton](https://github.com/Arquisoft/radarin_0) created by [Pablo González](https://github.com/pglez82) which is a bit more complex because the web client is implemented as a [React application](https://reactjs.org/) and the server contains monitoring and load testing.
