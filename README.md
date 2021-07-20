@@ -41,6 +41,7 @@ docker-compose up
 - [Jose Emilio Labra Gayo](https://github.com/labra)
 - [Victor Ortiz](https://github.com/vortiz86)
 - [Paolo Saxton](https://github.com/OPOSAX)
+- [Gonzalo Valdez](https://github.com)
 - [Matias Diaz](https://github.com/mdbesoain)
 
 
