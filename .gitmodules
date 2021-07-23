@@ -1,6 +1,6 @@
 [submodule "saw_g02_api"]
 	path = saw_g02_api
-	url = https://github.com/vortiz86/saw_g02_api
+	url = https://github.com/vortiz86/saw_g02_api.git
 [submodule "saw_g02_client"]
 	path = saw_g02_client
-	url = https://github.com/mdbesoain/saw_g02_client
+	url = https://github.com/mdbesoain/saw_g02_client.git
